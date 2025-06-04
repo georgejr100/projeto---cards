@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-main {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-section {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.card {
+  border: 2px solid black;
+  width: 320px;
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.card:hover {
+  background-color: blueviolet;
+}
+
+.card i {
+  font-size: 50px;
+}
+
+.card h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.card a {
+  color: #fff;
+  background-color: black;
+  font-size: 15px;
+  padding: 12px 0;
+  text-decoration: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+#twiter:hover {
+  background-color: gray;
+  color: white;
+}
+
+#instagram:hover {
+  background-color: blue;
+  color: white;
+}
+
+#youtube:hover {
+  background-color: red;
+  color: white;
+}
+
+#twiter:hover a,
+#instagram:hover a,
+#youtube:hover a {
+  background-color: #fff;
+  color: black;
+}
+
+@media (max-width: 1062px) {
+  .container-section {
+    padding: 50px;
+    justify-content: center ;
+  }
+}
